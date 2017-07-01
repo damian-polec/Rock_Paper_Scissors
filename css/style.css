@@ -1,0 +1,235 @@
+body{
+  background: rgb(51, 38, 19);
+  overflow: hidden;
+}
+.container{
+  padding: 15px;
+  text-transform: uppercase;
+}
+.title > h3{
+  font-weight: bold;
+  font-size: 50px;
+  color: #047e6f;
+  text-shadow: 0 0 5px #fff;
+}
+
+[class*="col-xs"]{
+  padding: 5px 15px;
+}
+
+.title > h3 > span{
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
+#js-newGameButton{
+  width: 300px;
+  height: 50px;
+  background: #fff;
+  border:2px solid #047e6f;
+  font-size: 25px;
+  font-weight: bold;
+  color: #047e6f;
+  text-shadow: 0 0 1px #000;
+  text-transform: uppercase;
+  transition: .3s;
+  background-image: linear-gradient(0deg, #047e6f 50%, transparent 50%);
+  background-position: 100% 0;
+  background-size: 200%;
+}
+#js-newGameButton:hover{
+  background-position: 0 100%;
+  color: #fff;
+  transition: .3s;
+  border-color: #fff;
+}
+
+.win h1{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-weight: bold;
+  font-size: 80px;
+  text-shadow: 0 0 2px #fff;
+  color: #047e6f;
+  transform: rotate(45deg);
+  display: none;
+  z-index: 3000;
+}
+
+.lose h1{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-weight: bold;
+  font-size: 80px;
+  text-shadow: 0 0 2px #fff;
+  color: #bb0101;
+  transform: rotate(-45deg);
+  display: none;
+  z-index: 3000;
+}
+
+.tie h1{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-weight: bold;
+  font-size: 80px;
+  text-shadow: 0 0 2px #fff;
+  color: #fff;
+  display: none;
+  z-index: 3000;
+}
+
+.player{
+  color: #fff;
+  text-shadow: 0 0 3px #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+.computer{
+  color: #047e6f;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0 0 3px #fff;
+}
+
+.player-badge{
+  position: relative;
+  top: -5px;
+  padding: 7px 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #047e6f;
+  background: #fff;
+  text-shadow: 0 0 1px #000;
+  border: 2px solid #047e6f;
+}
+.computer-badge{
+  position: relative;
+  top: -5px;
+  padding: 7px 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  background: #047e6f;
+  text-shadow: 0 0 1px #000;
+  border: 2px solid #fff;
+}
+
+.pick-btn{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #fff;
+  color: #047e6f;
+  border: 2px solid #047e6f;
+  text-shadow: 0 0 1px #000;
+  transition: .3s;
+}
+
+.pick-btn:hover{
+  color: #fff;
+  background: #047e6f;
+  transition: .3s;
+  border: 2px solid #fff;
+}
+
+.pick-btn:hover > .pick-badge{
+  background: #fff;
+  color: #047e6f;
+  border-color: #047e6f;
+  transition: .3s;
+}
+
+.pick-badge{
+  width: 30px;
+  height: 25px;
+  font-size: 18px;
+  background: #047e6f;
+  border: 1px solid #fff;
+  transition: .3s;
+}
+
+.col-xs-2{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.choice{
+  display: none;
+}
+
+.cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(51, 38, 19, 0.7);
+  display: none;
+  z-index: 2000;
+}
+
+.player-rock{
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 75px;
+  left: 100px;
+  display: none;
+}
+
+.player-paper{
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 75px;
+  left: 100px;
+  display: none;
+}
+
+.player-scissors{
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 75px;
+  left: 100px;
+  display: none;
+}
+
+.computer-rock{
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 75px;
+  right: 100px;
+  display: none;
+}
+.computer-paper{
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 75px;
+  right: 100px;
+  display: none;
+}
+.computer-scissors{
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 75px;
+  right: 100px;
+  display: none;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kodilla.com Zadanie 9.7</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="cover">
+    <div class="player-picks">
+      <img src="http://www.clker.com/cliparts/4/d/e/3/1293654397145462909rock.png" alt="rock" class="player-rock choice">
+      <img src="http://www.clker.com/cliparts/c/f/e/1/1293654374302559893paper.png" alt="" class="player-paper choice">
+      <img src="http://www.clker.com/cliparts/d/4/5/7/1293654411556958137scissors.png" alt="" class="player-scissors choice">
+    </div>
+    <div class="computer-picks">
+      <img src="http://www.clker.com/cliparts/4/d/e/3/1293654397145462909rock.png" alt="rock" class="computer-rock choice">
+      <img src="http://www.clker.com/cliparts/c/f/e/1/1293654374302559893paper.png" alt="" class="computer-paper choice">
+      <img src="http://www.clker.com/cliparts/d/4/5/7/1293654411556958137scissors.png" alt="" class="computer-scissors choice">
+    </div>
+    <div class="win">
+      <h1>YOU WON!</h1>
+    </div>
+    <div class="lose">
+      <h1>YOU LOST!</h1>
+    </div>
+    <div class="tie">
+      <h1>IT'S A TIE!</h1>
+    </div>
+  </div>
+  <div class="container title">
+    <h3 class="text-center">
+      <span>Welcome to</span> Rock<span> Paper</span> Scissors
+    </h3>
+  </div>
+  <div id="js-newGameElement" class="container">
+    <div class="row text-center">
+      <button id="js-newGameButton" class="btn btn-default">New Game</button>
+      <div class="logo">
+        <img src="https://acculturated.com/wp-content/uploads/2015/12/0-40-paper-scissors-rock-logos.jpg">
+      </div>
+    </div>
+  </div>
+  <div id="js-playerPickElement" class="container">
+    <div class="row text-center">
+      <button id="js-playerPick_rock" class="btn pick-btn">
+        <span class="badge pick-badge">
+          <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        </span>
+        Rock
+      </button>
+      <button id="js-playerPick_paper" class="btn pick-btn">
+        <span class="badge pick-badge">
+          <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        </span>
+        Paper
+      </button>
+      <button id="js-playerPick_scissors" class="btn pick-btn">
+        <span class="badge pick-badge">
+          <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+        </span>
+        Scissors
+      </button>
+    </div>
+  </div>
+  <dic id="js-resultsTableElement" class="container">
+    <div class="row">
+      <div class="col-xs-5 text-center">
+        <span id="js-playerName" class="player">
+          Player Name
+        </span>
+        <span id="js-playerPoints" class="badge player-badge">
+          0
+        </span>
+      </div>
+      <div class="col-xs-2 text-center">
+        VS.
+      </div>
+      <div class="col-xs-5 text-center">
+        <span id="js-computerPoints" class="badge computer-badge">
+          0
+        </span>
+        <span class="computer">
+          Computer
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-5 text-center">
+        <span id="js-playerPick" class="player">
+          Player Pick
+        </span>
+      </div>
+      <div class="col-xs-2"></div>
+      <div class="col-xs-5 text-center">
+        <span id="js-computerPick" class="computer">
+          Computer Pick
+        </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-5 text-center">
+        <span id="js-playerResult" class="player">
+          Player Score
+        </span>
+      </div>
+      <div class="col-xs-2"></div>
+      <div class="col-xs-5 text-center">
+        <span id="js-computerResult" class="computer">
+          Computer Score
+        </span>
+      </div>
+    </div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
